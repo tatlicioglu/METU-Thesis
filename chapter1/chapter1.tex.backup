@@ -1,0 +1,19 @@
+
+% CHAPTER 1
+\chapter{INTRODUCTION}
+\label{chp:introduction}
+
+\section{Section name}
+
+
+\subsection{subsection name}
+
+\begin{figure}[htbp]
+\begin{center}
+%  \includegraphics[width=.6\textwidth]{chapter1/fig1}
+\end{center}
+\caption{figure caption}
+\end{figure}
+
+\subsubsection{subsubsection}
+

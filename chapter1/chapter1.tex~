@@ -1,0 +1,109 @@
+
+% CHAPTER 1
+\chapter{INTRODUCTION}
+\label{chp:introduction}
+
+\section{How to ...}
+
+\subsection{How to insert figures and graphics}
+
+In order to insert figures or graphics, one should use the format below. The result of the commands appears as the figure shown below. Sometimes it is required that you should give cross-reference to a figure. Thus, it is important to give each figure a label. Be aware that this only works if you follow the path below to get a .pdf file.
+% \begin{eqnarray}
+%   \mbox{tex to dvi }> \mbox{dvi to ps} > \mbox{dvi to pdf} \nonumber
+% \end{eqnarray}
+
+{\scriptsize
+\begin{verbatim}
+ \vskip12pt
+ \begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=.8\textwidth]{chapter1/fig1}
+ \end{center}
+ \caption{View from Space}
+ \label{fig:space}
+ \end{figure}
+\end{verbatim}
+}
+
+\vskip1cm
+\begin{figure}[htbp]
+\begin{center}
+ \includegraphics[width=.7\textwidth]{chapter1/fig1}
+\end{center}
+\caption{View from Space}
+\label{fig:space}
+\end{figure}
+
+\subsection{How to generate tables}
+
+\subsubsection{A simple table}
+
+{\scriptsize
+\begin{verbatim}
+ \begin{tabular}{|r|r|}
+ \hline
+ $n$&$n!$\\
+ \hline
+ 1 & 1\\
+ 2 & 2\\
+ 3 & 6\\
+ 4 & 24\\
+ 5 & 120\\
+ 6 & 720\\
+ 7 & 5040\\
+ 8 & 40320\\
+ 9 & 362880\\
+ 10 & 3628800\\
+ \hline
+ \end{tabular}
+\end{verbatim}
+}
+
+\begin{tabular}{|r|r|}
+\hline
+$n$&$n!$\\
+\hline
+1 & 1\\
+2 & 2\\
+3 & 6\\
+4 & 24\\
+5 & 120\\
+6 & 720\\
+7 & 5040\\
+8 & 40320\\
+9 & 362880\\
+10 & 3628800\\
+\hline
+\end{tabular}
+
+\subsubsection{A more complicated table}
+
+\begin{verbatim}
+\begin{tabular}{|l||l|l||l|l|}
+\hline
+&\multicolumn{2}{l|}{Singular}&\multicolumn{2}{l|}{Plural}\\
+\cline{2-5}
+& English&\textbf{Gaeilge}& English&\textbf{Gaeilge}\\
+\hline\hline
+1st Person& at me&\textbf{agam}& at us&\textbf{againn}\\
+2nd Person& at you&\textbf{agat}& at you&\textbf{agaibh}\\
+3rd Person& at him&\textbf{aige}& at them&\textbf{acu}\\
+& at her&\textbf{aici}& & \\
+\hline
+\end{tabular}
+\end{verbatim}
+
+
+\begin{tabular}{|l||l|l||l|l|}
+\hline
+&\multicolumn{2}{l|}{Singular}&\multicolumn{2}{l|}{Plural}\\
+\cline{2-5}
+& English&\textbf{Gaeilge}& English&\textbf{Gaeilge}\\
+\hline\hline
+1st Person& at me&\textbf{agam}& at us&\textbf{againn}\\
+2nd Person& at you&\textbf{agat}& at you&\textbf{agaibh}\\
+3rd Person& at him&\textbf{aige}& at them&\textbf{acu}\\
+& at her&\textbf{aici}& & \\
+\hline
+\end{tabular}
+

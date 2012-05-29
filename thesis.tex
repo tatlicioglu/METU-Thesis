@@ -1,0 +1,167 @@
+\documentclass[11pt,oneandhalf,chaparabic]{metu}
+
+%*********************************************************************************
+%
+% 	Do not change/edit any of the items below till the \author comment
+%
+%*********************************************************************************
+\usepackage{appendix}
+% \usepackage{graphicx}
+% \usepackage{algorithm}
+% \usepackage{algorithmic}
+% \usepackage{multicol}
+% \usepackage{multirow}
+% \usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{slashbox}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{hhline}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\eod}{$\quad\triangleleft$}
+\newenvironment{defn}{\begin{definition}}{\hfill$\blacksquare$\end{definition}}
+\newenvironment{defn*}{\begin{definition}}{\end{definition}}
+\newenvironment{proof}{\noindent{\bf Proof.}}{\hfill$\blacksquare$}
+
+%*********************************************************************************
+
+
+% \author is the author of the thesis
+\author{...}
+% \authoruppercase is the author of the thesis written in capital letters
+\authoruppercase{...}
+% \graduateschool is the name of the graduate school
+\graduateschool{...}
+% \shortdegree should be M.S., M.A. or Ph.D.
+\shortdegree{...}
+% \director is the director of the graduate school
+\director{...}
+% \headofdept is the head of department of the thesis author
+\headofdept{...}
+
+%*********************************************************************************
+%
+%	Thesis Information
+%
+%*********************************************************************************
+
+\title{Thesis Title}
+% \degree should be Master of Science, Master of Arts or Philosophy of Doctorate
+\degree{...}
+% \department is the department of the thesis author, ex. Aerospace Engineering.
+\department{...}
+% \date is the date of thesis submission, ex. February 2008
+\date{...}
+% \supervisor is the supervisor of the thesis author
+\supervisor{Prof. Dr. ...}
+% \departmentofsupervisor is the department of supervisor, ex. Aerospace Engineering
+\departmentofsupervisor{... Department}
+%
+% \cosupervisor{Dr. Sartuk Karasoy}
+% \departmentofcosupervisor{ROKETSAN}
+
+% \keywords are the keyword that will appear on your thesis abstract page.
+% number of keywords cannot exceed 5.
+\keywords{keyword 1, keyword 2, keyword 3, keyword 4, keyword 5}
+
+\turkishtitle{Tez Basligi}
+% \turkishdegree should be Yuksek Lisans or Doktora
+\turkishdegree{...}
+% \turkishdepartment is the department of thesis author in Turkish, ex. Aerospace Engineering
+\turkishdepartment{... B\"ol\"um\"u}
+% \date is the date of thesis submission, ex. February 2008
+\turkishdate{...}
+% \turkishsupervisor is the same as \supervisor
+\turkishsupervisor{Prof. Dr. X}
+% \anahtarklm are the keywords that will appear on your thesis öz page.
+% number of anahtarklm cannot exceed 5 and they should be Turkish.
+\anahtarklm{anahtar kelime 1, anahtar kelime 2, anahtar kelime 3, anahtar kelime 4, anahtar kelime 5}
+
+%*********************************************************************************
+%
+% Examining Committee Member Information
+% First Committee Member should be the Head of Examining Committee
+%
+%*********************************************************************************
+
+\committeememberi{Committee Member 1 Name}
+\committeememberii{Committee Member 2 Name}
+\committeememberiii{Committee Member 3 Name}
+\committeememberiv{Committee Member 4 Name}
+\committeememberv{Committee Member 5 Name}
+\affiliationi{Committee Member 1 affiliation}
+\affiliationii{Committee Member 2 affiliation}
+\affiliationiii{Committee Member 3 affiliation}
+\affiliationiv{Committee Member 4 affiliation}
+\affiliationv{Committee Member 5 affiliation}
+
+%*********************************************************************************
+
+\begin{document}
+
+\begin{preliminaries}
+  \maketitle
+  \makeapproval
+  \plagiarism
+  \setlength{\parindent}{0em}
+  \setlength{\parskip}{10pt}
+% Abstract
+  \begin{abstract}\oneandhalfspacing
+	Write your abstract here.
+  \end{abstract}
+% Oz
+  \begin{oz}\oneandhalfspacing
+	Write your \"oz here in Turkish.
+  \end{oz}
+% Dedication
+  \dedication{\textit{Write your dedications here}}
+  \setlength{\parindent}{0em}
+  \setlength{\parskip}{10pt}
+% Acknowledgment
+  \begin{acknowledgments}\oneandhalfspacing
+	Write your acknowledgment here.
+  \end{acknowledgments}
+  \setlength{\parindent}{0em}
+  \setlength{\parskip}{3pt}
+% Table of Contents (do not try to edit ) 
+  \tableofcontents
+
+\listoftables
+
+\listoffigures
+
+\end{preliminaries}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{10pt}
+
+\input{chapter1/chapter1.tex}
+
+\newpage
+
+\input{references.tex}
+
+% if you have more that one appendix, then use \appendices, otherwise use \appendix
+
+\appendix
+% \appendices
+
+\input{appendix1/appendix1.tex}
+
+% \input{appendix2.tex}
+
+% \input{appendix3.tex}
+
+\end{document}
