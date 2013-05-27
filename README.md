@@ -1,3 +1,7 @@
+== OBSOLETE ==
+=== The updated template can be found at fbe.metu.edu.tr. This repo will be updated soon.
+
+
 METU-Thesis
 ===========
 
